@@ -17,11 +17,11 @@ if find_word in first_side:
     find_side = first_side
     min_length = len(first_side)
 elif find_word in second_side:
-    if min_length > len(second_side):
+    if min_length >= len(second_side):
         min_length = len(second_side)
     find_side = second_side
 elif find_word in third_side:
-    if min_length > len(third_side):
+    if min_length >= len(third_side):
         min_length = len(third_side)
     find_side = third_side
 print(f"{find_side} {min_length}")
