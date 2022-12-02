@@ -9,5 +9,9 @@
 Формат вывода
 Все числа от начала до конца (включительно), записанные через пробел.
 """
-for i in range(int(input()), int(input()) + 1):
-    print(i, end = ' ')
+start_position, end_position = int(input()), int(input())
+for i in range(start_position, end_position + 1):
+    if i == end_position:
+        print(i, end = '')
+    else:
+        print(i, end = ' ')
