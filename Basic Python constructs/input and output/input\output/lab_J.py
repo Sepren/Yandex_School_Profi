@@ -14,7 +14,7 @@
 
 name, number = input(), int(input())
 kindergarten = number // 100
-bed = number // 10 % 10
+bed = number % 100 // 10
 group = number % 10
 print(f"Группа №{kindergarten}.\n{group}. {name}.")
-print(f"Шкафичк: {number}.\nКроватка: {bed}.")
+print(f"Шкафчик: {number}.\nКроватка: {bed}.")
